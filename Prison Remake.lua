@@ -1,5 +1,6 @@
 -- Prison [VC🔉] 
 -- By dabbingman137 | Discord: dabbingman137
+-- antilag is cooked dont enable it 
 
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
@@ -189,7 +190,7 @@ local function CheckPlayers()
 
                 if distance < SafeDistance then
                     if IsTarget(player) then
-                        CreateNotification("🚨 TARGET NEARBY 🚨", player.Name .. " (The Streets) is " .. math.floor(distance) .. " studs away!", Color3.fromRGB(255, 80, 80))
+                        CreateNotification("TARGET NEARBY", player.Name .. " (The Streets) is " .. math.floor(distance) .. " studs away!", Color3.fromRGB(255, 80, 80))
                     else
                         CreateNotification("Player Nearby", player.Name .. " is " .. math.floor(distance) .. " studs away.", Color3.fromRGB(100, 200, 255))
                     end
